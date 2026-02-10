@@ -1,0 +1,26 @@
+# Site settings
+title: Physi Artisan
+description: 匠心手作，品质生活
+baseurl: ""
+url: "https://physiartisan.com"
+author: chenzhen288
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation
+nav:
+  - title: 首页
+    url: /
+  - title: 关于
+    url: /about/
+  - title: 联系
+    url: /contact/
+
+# Social
+email: chenzhen288@163.com
+github: chenzhen288

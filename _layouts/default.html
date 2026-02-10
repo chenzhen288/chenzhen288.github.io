@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .site-header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 30px;
+        }
+        .site-header h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+        .tagline {
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        nav a:hover { text-decoration: underline; }
+        .intro, .features, .cta {
+            margin: 40px 0;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .feature {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .feature h3 { margin-bottom: 10px; color: #2c3e50; }
+        .cta {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #7f8c8d;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">首页</a>
+        <a href="/about">关于</a>
+    </nav>
+    
+    {{ content }}
+    
+    <footer>
+        <p>&copy; 2025 Physi Artisan. All rights reserved.</p>
+        <p>联系邮箱：chenzhen288@163.com</p>
+    </footer>
+</body>
+</html>
